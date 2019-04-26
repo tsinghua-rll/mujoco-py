@@ -213,7 +213,7 @@ class MujocoExtensionBuilder():
                 '-fopenmp',  # needed for OpenMP
                 '-w',  # suppress numpy compilation warnings
             ],
-            extra_link_args=['-fopenmp'],
+            extra_link_args=['-fopenmp', '-L/usr/lib/x86_64-linux-gnu'],
             language='c')
 
     def build(self):
